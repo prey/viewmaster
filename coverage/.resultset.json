@@ -399,25 +399,6 @@
         null,
         null
       ],
-      "/Users/michelsonmartinez/Documents/ruby/viewmaster/spec/helpers/viewmaster/looks_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
       "/Users/michelsonmartinez/Documents/ruby/viewmaster/spec/lib/config_spec.rb": [
         1,
         null,
@@ -598,6 +579,6 @@
         null
       ]
     },
-    "timestamp": 1425927571
+    "timestamp": 1425934538
   }
 }

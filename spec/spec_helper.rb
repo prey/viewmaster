@@ -13,8 +13,8 @@ require 'shoulda/matchers/integrations/rspec'
 require "viewmaster"
 
 
-require 'support/schema'
-require 'support/models'
+require File.expand_path("../../spec/support/schema", __FILE__)
+require File.expand_path("../../spec/support/models", __FILE__)
 
 RSpec.configure do |config|
   config.infer_base_class_for_anonymous_controllers = false

@@ -2,6 +2,9 @@
 
 ![logo](./logo.png)
 
+[![Build Status](https://travis-ci.org/prey/viewmaster.png?branch=master)](http://travis-ci.org/prey/viewmaster)
+[![Code Climate](https://codeclimate.com/github/prey/viewmaster.png)](https://codeclimate.com/github/prey/viewmaster)
+
 
 ##The layout version switcher for Rails.
 

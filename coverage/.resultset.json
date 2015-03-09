@@ -270,10 +270,6 @@
         null,
         null
       ],
-      "/Users/michelsonmartinez/Documents/ruby/viewmaster/spec/dummy/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
       "/Users/michelsonmartinez/Documents/ruby/viewmaster/spec/factories/general_models.rb": [
         null,
         1,
@@ -602,6 +598,6 @@
         null
       ]
     },
-    "timestamp": 1425476556
+    "timestamp": 1425913987
   }
 }

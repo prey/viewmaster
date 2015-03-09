@@ -13,15 +13,15 @@
 
 ### Motivation:
 
-Many times we face the problem of build the new version of an app, very often that new version are just interface improvements but also could be radical layout change with a tottaly different corporative image, UI, UX , you name it. in either case we always have to keep in mind that the user will suffer when he have to learn all your app stuff again.
+When completely overhauling the interface of an app, it's our responsibility to make sure the user does not suffer because of the transition, considering he might need to re-learn to use our app practically from scratch. 
 
-In industry there is a common pattern, when a site display to us a new version it enable us to transition back and forth through versions.
+The common pattern to minimize the impact on the users is to allow them to transition back and forth between versions.
 
-the main intention of this gem is to provide that functionality to rails with an easy way to declare the behavior of the transition, even handling more than one *new version*.
+This gem provides said functionality, allowing you to easily implement the transition between your current layout and *one or more new layout versions*.
 
 ### Usage:
 
-Viewmaster will need a current_user variable to be accesible from controller, just as many authentication solutions does. for example with Devise will work just fine.
+Viewmaster will need a current_user variable to be accesible from controller, just as many authentication solutions do. For example with Devise will work just fine.
 
 #### config/routes.rb
 
@@ -56,13 +56,13 @@ Viewmaster will need a current_user variable to be accesible from controller, ju
 
 ```
 
-*default version*: sets the default version that will render in case the user will not have the session or the setting, it accepts Procs too
+*default version*: sets the default layout version that will render in case the user does not have a version set in session or a setting persisted in DB. It can also accepts Procs.
 
-*version block*: you can add as many template versions you want with `add_version` block, `template_path` will set the proper path for that version to look up your templates
+*version block*: you can add as many layout versions you want with an `add_version` block. Then, `template_path` will set the proper path for that version to look up for your templates.
 
-*transition block* will enable you to handle which versions will be able to transition to. Also you can set a callback action which is going to be triggered when the user transition from one version to another is done. for example send Kiss Metric, Statsd data when user transition.
+*transition block* will enable you to handle which versions will the user be able to transition to. Also you can set a callback action which is going to be triggered when transition from one version to another is completed. For example, this can help you to send data to KissMetric or Statsd.
 
-Also you could add a `filter` to enable/disable the transition functionality on specific cases. For example an user registered after the lauch of the new version should not be able to transition the old version, but old users could switch back to their previous known version.
+Also you could add a `filter` to enable/disable the transition functionality on specific cases. For example, an user registered after the launch of the new version should not be able to transition to the old version, but old users could switch back to their previous known version.
 
 
 PreyProject © 2005 , licensed under MIT.

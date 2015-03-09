@@ -63,5 +63,5 @@ Viewmaster will need a current_user variable to be accesible from controller, ju
 Also you could add a `filter` to enable/disable the transition functionality on specific cases. For example, an user registered after the launch of the new version should not be able to transition to the old version, but old users could switch back to their previous known version.
 
 
-PreyProject © 2005 , licensed under MIT.
+© 2015 Prey, Inc. licensed under MIT.
 

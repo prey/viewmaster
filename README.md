@@ -17,7 +17,7 @@ When completely overhauling the interface of an app, it's our responsibility to 
 
 The common pattern to minimize the impact on the users is to allow them to transition back and forth between versions.
 
-This gem provides said functionality, allowing you to easily implement the transition between your current layout and *one or more new layout versions*.
+This gem provides said functionality, allowing you to easily implement the transition between your current layout and **one or more new layout versions**.
 
 ### Usage:
 
@@ -56,11 +56,11 @@ Viewmaster will need a current_user variable to be accesible from controller, ju
 
 ```
 
-*default version*: sets the default layout version that will render in case the user does not have a version set in session or a setting persisted in DB. It can also accepts Procs.
+**default version**: sets the default layout version that will render in case the user does not have a version set in session or a setting persisted in DB. It can also accepts Procs.
 
-*version block*: you can add as many layout versions you want with an `add_version` block. Then, `template_path` will set the proper path for that version to look up for your templates.
+**version block**: you can add as many layout versions you want with an `add_version` block. Then, `template_path` will set the proper path for that version to look up for your templates.
 
-*transition block* will enable you to handle which versions will the user be able to transition to. Also you can set a callback action which is going to be triggered when transition from one version to another is completed. For example, this can help you to send data to KissMetric or Statsd.
+**transition block** will enable you to handle which versions will the user be able to transition to. Also you can set a callback action which is going to be triggered when transition from one version to another is completed. For example, this can help you to send data to KissMetric or Statsd.
 
 Also you could add a `filter` to enable/disable the transition functionality on specific cases. For example, an user registered after the launch of the new version should not be able to transition to the old version, but old users could switch back to their previous known version.
 

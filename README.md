@@ -6,14 +6,14 @@
 ##The layout version switcher for Rails.
 
 
-[![Build Status](https://travis-ci.org/michelson/viewmaster.png?branch=master)](http://travis-ci.org/michelson/viewmaster)
-[![Code Climate](https://codeclimate.com/github/michelson/viewmaster.png)](https://codeclimate.com/github/michelson/viewmaster)
+[![Build Status](https://travis-ci.org/prey/viewmaster.png?branch=master)](http://travis-ci.org/prey/viewmaster)
+[![Code Climate](https://codeclimate.com/github/prey/viewmaster.png)](https://codeclimate.com/github/prey/viewmaster)
 
-[ChangeLog](https://github.com/michelson/viewmaster/blob/master/CHANGELOG.md)
+[ChangeLog](https://github.com/prey/viewmaster/blob/master/CHANGELOG.md)
 
 ### Motivation:
 
-When completely overhauling the interface of an app, it's our responsibility to make sure the user does not suffer because of the transition, considering he might need to re-learn to use our app practically from scratch. 
+When completely overhauling the interface of an app, it's our responsibility to make sure the user does not suffer because of the transition, considering he might need to re-learn to use our app practically from scratch.
 
 The common pattern to minimize the impact on the users is to allow them to transition back and forth between versions.
 
